@@ -1,6 +1,35 @@
 # GithubSearch
+This is an angular application that uses Github API to get user data . By entering the username it will give you the repository details of the user. In the appilication their is also a quote platform where you can add your favorite quotes in it. YOu can also delete a quote, upvote a quote or downvote a quote.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.19.
+## Technologies Used
+
+-This project was generated using angular cli
+-HTML $ CSS (Bootstrap) for styling.
+
+##Behaviour Driven Develeopment.
+
+For the Github search.
+1.Displays GitHub info of a user when user name is entered
+-INPUT: "user name entered"
+-OUTPUT: "Displays User Details"
+2.Displays all repositories of a user when show repositories button is pressed
+-INPUT: "Show repositories button pressed
+-OUTPUT: "Displays User Repo Details"
+3.Displays an error message if you leave the name input field blank
+-INPUT: " "
+-OUTPUT: "Name's required"
+4.Displays an error message if you leave the repo name input field blank
+-INPUT: " "
+-OUTPUT: "Repo Name is required"
+5.Displays an error message if the user name entered couldn't be found
+-INPUT: "username"
+-OUTPUT: "User Doesn't Exist"
+6.Displays an error message if the repo name entered couldn't be found
+-INPUT: "repository"
+-OUTPUT: "Repository Doesn't Exist"
+
+For Quotes.
+
 
 ## Development server
 
