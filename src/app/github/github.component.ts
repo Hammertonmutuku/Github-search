@@ -25,9 +25,13 @@ export class GithubComponent implements OnInit {
      
     findProfile(){
       this.githubservice.updateProfile(this.username);
-      this.githubservice.getGithubInfo().subscribe(profile => {
-        console.log(profile);
-        this.profile = profile;
+      this.githubservice.getGithubInfo().subscribe(github => {
+        console.log(github);
+        this.profile = github;
+        this.githubservice.getGithubRepos().subscribe(repos => {
+          console.log(repos);
+          this.repos = repos;
+        })
       });
     
       this.githubservice.getGithubRepos().subscribe(repos => {

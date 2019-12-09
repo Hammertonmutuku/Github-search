@@ -8,6 +8,7 @@ import { GithubComponent } from './github/github.component';
 import { DateCountPipe } from './date-count.pipe';
 import { GithubService } from './github-service/github.service';
 import { HttpClient } from 'selenium-webdriver/http';
+import {FormsModule} from '@angular/forms'
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,6 +20,7 @@ import { HttpClient } from 'selenium-webdriver/http';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
   ],
   providers: [GithubService],
   bootstrap: [AppComponent]

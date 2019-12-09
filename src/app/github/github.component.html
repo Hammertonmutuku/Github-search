@@ -1,9 +1,15 @@
 <div class="navi">
 <h1><img src ="https://bit.ly/2E1b76l" width="200px"></h1>
-<form class="form-inline my-2 my-lg-0">
-    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+<!-- <form class="form-inline my-2 my-lg-0" (ngSubmit)='findProfile()' #searchForm="ngForm">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" [(ngModel)] ="userName" name="username ">
     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-  </form>
+  </form> -->
+  <form action="" class="">
+    <div class="form-group ">
+        <input type="text" placeholder="Enter github's username...." class="form-control m-5" [(ngModel)]="username"
+            name="username" (keyup)="findProfile()">
+    </div>
+</form>
   </div>
   <div *ngIf="profile">
     <div class="row">
