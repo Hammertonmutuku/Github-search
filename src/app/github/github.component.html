@@ -11,28 +11,25 @@
             name="username" (keyup)="findProfile()">
     </div>
 </form>
-  </div>
+</div>
+<div class="row">
+        <div class ="col-md-6">
   <div *ngIf="profile">
-    <div class="row">
-        <div class="col-sm-3">
-            <img class="img" src="{{profile.avatar_url}}" class="img-fluid" alt="profile">
-        </div>
+    <img class="img" src="{{profile.avatar_url}}" class="img-fluid" alt="profile">
         <br>
-        <br>
-        <div class="col-sm-3">
             <ul class="list-group">
                 <li class="list-group-item" *ngIf="profile.bio">{{profile.bio}}</li>
                 <li class="list-group-item" *ngIf="profile.blog">{{profile.blog}}</li>
                 <li class="list-group-item" *ngIf="profile.email">{{profile.email}}</li>
             </ul>
-        </div>
-    </div>
+         
+         </div>
     <div class='row'>
     <div class="col-sm-6">
         <div>
             <hr>
             <p>
-                <span class="label" class="btn btn-success"> {{profile.followers}} Followers</span>&nbsp;
+                <span class="label" class="btn btn-info"> {{profile.followers}} Followers</span>&nbsp;
 
                 <span class="label" class="btn btn-info"> {{profile.following}} Following </span>&nbsp;
 
@@ -43,17 +40,13 @@
             <hr>
             <hr>
         </div>
-            <ul class="list-group">
-                <li class="list-group-item"><strong>Username: </strong>{{user.login}}</li>
-                <li class="list-group-item"><strong>Location: </strong>{{Location.login}}</li>
-                <li class="list-group-item"><strong>Email: </strong>{{email.login}}</li>
-                <li class="list-group-item"><strong>Blog: </strong>{{blog.login}}</li>
-            </ul>
-
+        
             <p>
                 <a href="{{profile.html_url}}" target="_blank" class=" view  btn btn-outline-info">View profile on github</a>
             </p>
-            <hr>
+            </div>
+    </div>
+            <div class="col-md-6">
             <h1>Repositories.</h1>
             <div class="row">
                     <div class=" col-sm-10card-columns">
@@ -78,6 +71,6 @@
             </div>
 
         </div>
-    </div>
+
     </div>
     </div>
