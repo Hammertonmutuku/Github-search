@@ -1,3 +1,6 @@
 .navi {
     display:flex;
 }
+img {
+    padding-top:25px;
+}
